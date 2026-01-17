@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -10,8 +11,8 @@ const nextConfig = {
     return {
       fallback: [
         {
-          source: '/docs/:path*',
-          destination: `https://meshtastic.org/docs/:path*`,
+          source: '/:path*',
+          destination: `https://meshtastic.org/:path*`,
         },
       ]
     }
