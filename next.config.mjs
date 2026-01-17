@@ -235,8 +235,16 @@ const nextConfig = {
     return {
       fallback: [
         {
-          source: '/docs/:path*',
-          destination: 'https://docs.dand.app/docs/:path*',
+          source: '/docs',
+          destination: 'https://docs.dand.app/docs',
+        },
+        {
+          source: '/docs/:path',
+          destination: 'https://docs.dand.app/docs/:path',
+        },
+        {
+          source: '/docs/:path*/:subpath',
+          destination: 'https://docs.dand.app/docs/:path*/:subpath',
         },
       ]
     }
