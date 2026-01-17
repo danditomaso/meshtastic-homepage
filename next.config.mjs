@@ -45,12 +45,12 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/software/android-too-old:path*/',
+        source: '/software/android-too-old/:path*/',
         destination: '/docs/software/android/installation/',
         permanent: true,
       },
       {
-        source: '/docs/software/android/android-installation:path*/',
+        source: '/docs/software/android/android-installation/:path*/',
         destination: '/docs/software/android/installation/',
         permanent: true,
       },
@@ -235,16 +235,8 @@ const nextConfig = {
     return {
       fallback: [
         {
-          source: '/docs',
-          destination: 'https://docs.dand.app/docs',
-        },
-        {
-          source: '/docs/:path',
-          destination: 'https://docs.dand.app/docs/:path',
-        },
-        {
-          source: '/docs/:path*/:subpath',
-          destination: 'https://docs.dand.app/docs/:path*/:subpath',
+          source: '/docs/:path*/',
+          destination: 'https://docs.dand.app/docs/:path*/',
         },
       ]
     }
