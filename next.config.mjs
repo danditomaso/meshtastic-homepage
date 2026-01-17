@@ -10,8 +10,8 @@ const nextConfig = {
     return {
       fallback: [
         {
-          source: '/:path*',
-          destination: `https://meshtastic.org/:path*`,
+          source: '/docs/:path*',
+          destination: `https://meshtastic.org/docs/:path*`,
         },
       ]
     }
