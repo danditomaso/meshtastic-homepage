@@ -236,7 +236,7 @@ const nextConfig = {
       fallback: [
         {
           source: '/docs/:path*/',
-          destination: 'https://docs.dand.app/docs/:path*/',
+          destination: 'http://localhost:3001/docs/:path*/',
         },
       ]
     }

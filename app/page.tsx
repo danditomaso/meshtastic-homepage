@@ -89,7 +89,7 @@ export default function HomePage() {
 				<main className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
 					<div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 						<div className="text-center lg:text-left">
-							<h2 className="text-balance font-mono text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
+							<h2 className="[text-wrap:balance] font-mono text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
 								Off-Grid
 								<br />
 								<span className="text-primary">Communication</span>
@@ -97,7 +97,7 @@ export default function HomePage() {
 								For Everyone
 							</h2>
 
-							<div className="mt-6 rounded-xl border border-border/50 bg-card/60 p-6 backdrop-blur-xl">
+							<div className="mt-6 rounded-xl border border-border/50 bg-card/95 p-6 backdrop-blur-xl">
 								<p className="max-w-lg text-lg m-auto text-center lg:text-left text-foreground lg:max-w-none">
 									An open source, off-grid, decentralized mesh network built to
 									run on affordable, low-power devices. No cell towers. No
@@ -158,7 +158,7 @@ export default function HomePage() {
 							].map((feature) => (
 								<div
 									key={feature.title}
-									className="rounded-xl border-2 border-border/50 bg-card/90 p-6 shadow-lg shadow-foreground/5 backdrop-blur-md hover:border-primary/30 hover:opacity-90 transition-all"
+									className="rounded-xl border-2 border-border/50 bg-card p-6 shadow-lg shadow-foreground/5 backdrop-blur-md hover:border-primary/30 hover:opacity-90 transition-all"
 								>
 									<h3 className="font-mono text-lg font-bold text-foreground">
 										{feature.title}
@@ -173,7 +173,7 @@ export default function HomePage() {
 
 					<section aria-label="Download clients" className="mt-16">
 						<div className="text-left mb-12">
-							<h2 className="text-balance font-mono text-3xl font-bold text-foreground md:text-4xl">
+							<h2 className="[text-wrap:balance] font-mono text-3xl font-bold text-foreground md:text-4xl">
 								Get Connected
 							</h2>
 							<p className="mt-4 text-lg text-muted-foreground max-w-3xl">
@@ -184,7 +184,7 @@ export default function HomePage() {
 						</div>
 
 						<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-							<div className="group rounded-2xl border border-border/50 bg-card/60 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:opacity-90">
+							<div className="group rounded-2xl border border-border/50 bg-card/95 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:opacity-90">
 								<div className="flex items-start justify-between mb-4">
 									<h3 className="font-mono text-2xl font-bold text-foreground">
 										iOS App
@@ -206,7 +206,7 @@ export default function HomePage() {
 								</Link>
 							</div>
 
-							<div className="group rounded-2xl border border-border/50 bg-card/60 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:opacity-90">
+							<div className="group rounded-2xl border border-border/50 bg-card/95 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:opacity-90">
 								<div className="flex items-start justify-between mb-4">
 									<h3 className="font-mono text-2xl font-bold text-foreground">
 										Android App
@@ -228,7 +228,7 @@ export default function HomePage() {
 								</Link>
 							</div>
 
-							<div className="group rounded-2xl border border-border/50 bg-card/60 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:opacity-90">
+							<div className="group rounded-2xl border border-border/50 bg-card/95 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:opacity-90">
 								<div className="flex items-start justify-between mb-4">
 									<h3 className="font-mono text-2xl font-bold text-foreground">
 										Web Client
@@ -250,7 +250,7 @@ export default function HomePage() {
 								</a>
 							</div>
 
-							<div className="group rounded-2xl border border-border/50 bg-card/60 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:opacity-90">
+							<div className="group rounded-2xl border border-border/50 bg-card/95 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:opacity-90">
 								<div className="flex items-start justify-between mb-4">
 									<h3 className="font-mono text-2xl font-bold text-foreground">
 										Python CLI/SDK
@@ -278,7 +278,7 @@ export default function HomePage() {
 					</section>
 				</main>
 
-				<footer className="border-t border-border/50 bg-card/40 backdrop-blur-sm">
+				<footer className="border-t border-border/50 bg-card/80 backdrop-blur-sm">
 					<div className="mx-auto max-w-7xl px-6 py-6">
 						<div className="flex flex-col items-center justify-center gap-2 text-center text-base text-muted-foreground md:flex-row md:gap-1">
 							<Link href={links.vercel} className="flex items-center gap-2">
