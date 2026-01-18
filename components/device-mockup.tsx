@@ -68,7 +68,7 @@ export function DeviceMockup() {
 		cols?: number;
 	}) => (
 		<div
-			className="grid max-h-32 gap-1 overflow-y-auto scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+			className="grid max-h-32 gap-1 overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
 			style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
 		>
 			{reactions.map((emoji) => (
@@ -267,8 +267,8 @@ export function DeviceMockup() {
 
 	return (
 		<div className="relative">
-			<div className="relative w-100 rounded-[2.5rem] bg-linear-to-b from-gray-800 to-gray-900 p-4 shadow-2xl shadow-black/50 ring-1 ring-gray-600/50">
-				<div className="rounded-4xl bg-gray-900 p-2.5">
+			<div className="relative w-[25rem] rounded-[2.5rem] bg-gradient-to-b from-gray-800 to-gray-900 p-4 shadow-2xl shadow-black/50 ring-1 ring-gray-600/50">
+				<div className="rounded-[2rem] bg-gray-900 p-2.5">
 					<div className="relative overflow-hidden rounded-[1.75rem] bg-gray-950">
 						<div className="flex items-center justify-between bg-gray-900/80 px-5 py-3 text-base text-primary">
 							<span className="font-mono">{currentTime}</span>
@@ -297,7 +297,7 @@ export function DeviceMockup() {
 
 						<div
 							ref={messagesContainerRef}
-							className="h-70 flex flex-col-reverse gap-2 overflow-y-auto p-3 [&::-webkit-scrollbar]:w-2.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border"
+							className="h-[17.5rem] flex flex-col-reverse gap-2 overflow-y-auto p-3 [&::-webkit-scrollbar]:w-2.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border"
 						>
 							{messages.map((msg) => (
 								<Fragment key={msg.id}>

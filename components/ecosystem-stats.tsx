@@ -19,7 +19,7 @@ function StatItem({ icon, value, label, suffix, countUp }: StatItemProps) {
 
 	return (
 		<div className="group relative overflow-hidden rounded-xl border border-primary/20 bg-card/60 p-4 backdrop-blur-sm transition-all hover:border-primary/30 hover:bg-card/80">
-			<div className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+			<div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
 
 			<div className="relative">
 				<div className="relative flex w-fit place-items-center gap-3">
